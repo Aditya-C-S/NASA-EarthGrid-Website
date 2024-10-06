@@ -8,8 +8,8 @@ const firstImageData = firstLink.getAttribute('data-image');
 // Create the default images
 const img1 = document.createElement('img');
 const img2 = document.createElement('img');
-img1.src = `./images/${firstImageData}.jpg`;
-img2.src = `./images/${firstImageData}_related.jpg`; // adjust the related image path as needed
+img1.src = `./images2/${firstImageData}.jpg`;
+img2.src = `./images2/${firstImageData}_related.jpg`; // adjust the related image path as needed
 imageContainer.innerHTML = '';
 imageContainer.appendChild(img1);
 imageContainer.appendChild(img2);
@@ -19,8 +19,8 @@ navLinks.forEach((link) => {
     const imageData = e.target.getAttribute('data-image');
     const img1 = document.createElement('img');
     const img2 = document.createElement('img');
-    img1.src = `./images/${imageData}.jpg`;
-    img2.src = `./images/${imageData}_related.jpg`; // adjust the related image path as needed
+    img1.src = `./images2/${imageData}.jpg`;
+    img2.src = `./images2/${imageData}_related.jpg`; // adjust the related image path as needed
     imageContainer.innerHTML = '';
     imageContainer.appendChild(img1);
     imageContainer.appendChild(img2);
